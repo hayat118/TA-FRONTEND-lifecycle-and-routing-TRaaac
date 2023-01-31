@@ -9,9 +9,9 @@ class Battle extends React.Component {
     };
   }
 
-  handleChange = (e) => {
+  handleChange = (event) => {
     this.setState({
-      input: e.target.value,
+      input: event.target.value,
     });
   };
 
@@ -22,8 +22,8 @@ class Battle extends React.Component {
   //   // .then((data) => console.log(data));
   // }
 
-  handleSubmit = (event) => {
-    event.preventDefault();
+  handleSubmit = (e) => {
+    e.preventDefault();
 
     fetch(`https://api.github.com/users/${this.state.input}`)
       .then((res) => res.json())
