@@ -33,7 +33,6 @@ class Headlines extends React.Component {
                   <h2 className="title">
                     Title:{this.state.data.articles[i].title}
                   </h2>
-                  {/* <p>Content:{this.state.data.articles[i].content}</p> */}
                 </div>
               </div>
             );
