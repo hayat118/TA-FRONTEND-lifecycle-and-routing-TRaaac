@@ -135,6 +135,8 @@ table {
 
 h1 {
   text-align: center;
+  padding: 10px 0;
+  background-color: aquamarine;
 }
 a {
   text-decoration: none;
@@ -151,13 +153,21 @@ a {
 .start-box {
   border: 1px solid black;
   width: 50%;
-  padding: 100px;
+  background-color: antiquewhite;
+}
+label {
+  margin: 10px;
+}
+select {
+  margin: 10px;
 }
 .start {
-  background-color: red;
+  background-color: rgb(139, 173, 87);
   padding: 10px 20px;
   margin-top: 40px;
+  margin-bottom: 20px;
   display: inline-block;
+  color: red;
 }
 /* quiz */
 
@@ -170,7 +180,7 @@ a {
 }
 .question {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 10px;
   background-color: aqua;
 }
 .answer {
@@ -180,9 +190,22 @@ a {
   background-color: bisque;
   margin-bottom: 5px;
 }
-.isActive {
-  background-color: green;
+.disable {
+  pointer-events: none;
 }
-.active {
-  color: red;
+
+.answer:hover {
+  background-color: rgb(224, 162, 162);
+}
+
+.score-box {
+  border: 1px solid darkcyan;
+  padding: 20px;
+  background-color: antiquewhite;
+  margin: 20px auto;
+  width: 250px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
 }

@@ -1,19 +1,17 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Start from "./start";
-import Quiz from "./quiz";
-import Results from "./results";
+import Start from "./Start";
+import Quiz from "./Quiz";
 
 function App() {
   return (
     <>
-      <div className="box">
-        <Routes>
-          <Route path="/" element={<Start />} />
-          <Route path="/quiz" element={<Quiz />} />
-          <Route path="/results" element={<Results />} />
-        </Routes>
-      </div>
+      {/* <div className="box"> */}
+      <Routes>
+        <Route path="/" element={<Start />} />
+        <Route path="/quiz" element={<Quiz />} />
+      </Routes>
+      {/* </div> */}
     </>
   );
 }
